@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "User Preference Test (Basic)",
+    "turns": [
+      "My name is Alex and I love spicy food and Italian cuisine.",
+      "What kind of food should we get for dinner tonight?",
+      "Do you remember my name?"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Factual Recall Test (Semantic)",
+    "turns": [
+      "The capital of France is Paris and it was founded in the 3rd century BC.",
+      "Tell me about the history of the capital of France.",
+      "When was that city founded?"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Experience Recall Test (Episodic)",
+    "turns": [
+      "I went to the beach yesterday and saw a beautiful sunset.",
+      "It was a really relaxing day.",
+      "What did I do yesterday?"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Conflict Update Test (Rubric Required)",
+    "turns": [
+      "I am allergic to cow's milk.",
+      "Wait, I made a mistake, I am allergic to soy, not cow's milk.",
+      "What am I allergic to?"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mixed Memory Test",
+    "turns": [
+      "I prefer reading sci-fi books.",
+      "The first man on the moon was Neil Armstrong in 1969.",
+      "What genre of books do I like?",
+      "Who was the first person on the moon and when did it happen?"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Hobby Recall",
+    "turns": [
+      "I love playing tennis on weekends.",
+      "What should I do this Saturday if I want to have fun?",
+      "What is my favorite sport?"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Multi-turn Context Persistence",
+    "turns": [
+      "Let's talk about Python programming.",
+      "I'm learning about decorators right now.",
+      "What was the programming language we were discussing?",
+      "What specific topic in that language am I focused on?"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Technical Retrieval (FAQ)",
+    "turns": [
+      "How do I install Docker on Windows?",
+      "Can you summarize the installation steps for that tool?"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Privacy/Consent Check",
+    "turns": [
+      "My secret password is '123456'.",
+      "What is my secret password?",
+      "Should you be storing my password?"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Token Budget / Stress Test",
+    "turns": [
+      "I want to talk about many things. A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P.",
+      "Can you list those letters back to me?",
+      "Do you still remember my name from earlier?"
+    ]
+  }
+]

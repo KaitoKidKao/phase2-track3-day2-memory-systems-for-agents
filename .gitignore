@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Environment
+.env
+
+# Data & Databases (Lab 17 specific)
+data/chroma_db/
+data/episodic_logs.json
+data/semantic_db.json
+data/benchmark_results.csv
+
+# IDEs
+.vscode/
+.idea/
