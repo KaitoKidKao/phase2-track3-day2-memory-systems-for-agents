@@ -2,6 +2,8 @@
 
 ## Nguyễn Trí Cao - 2A202600223
 
+Link github: https://github.com/KaitoKidKao/phase2-track3-day2-memory-systems-for-agents.git
+
 ## 1. Giới thiệu
 Đây là hệ thống Agent thông minh được xây dựng bằng **LangGraph**, tích hợp đầy đủ 4 tầng bộ nhớ (Full Memory Stack) để duy trì ngữ cảnh và cá nhân hóa trải nghiệm người dùng trong các cuộc hội thoại đa lượt.
 
