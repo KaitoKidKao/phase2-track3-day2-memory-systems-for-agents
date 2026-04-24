@@ -1,5 +1,6 @@
 import sys
 from core.graph import MultiMemoryGraph
+from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -39,17 +40,20 @@ def main():
             result = agent.run(user_id, user_input, with_memory=with_memory, history=history)
             response = result['messages'][-1]
             history.append(HumanMessage(content=user_input))
-            history.append(response) # Store AI response too
+            history.append(response)
             
             response_text = response.content
             intent = result.get('intent', 'N/A')
             memories = result.get('retrieved_memories', [])
             
-            print(f"\n[Intent: {intent}]")
+            # Clean output formatting
+            print(f"\n--- Analysis ---")
+            print(f"  [Intent]   : {intent}")
             if memories:
-                print(f"[Retrieved {len(memories)} memory snippets]")
+                print(f"  [Memories] : {len(memories)} snippets retrieved")
+            print(f"----------------\n")
             
-            print(f"Agent: {response}")
+            print(f"Agent: {response_text}")
             
         except Exception as e:
             print(f"Error during execution: {e}")
